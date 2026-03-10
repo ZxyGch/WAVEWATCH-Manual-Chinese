@@ -234,7 +234,6 @@ WAVEWATCH III 开发团队
 
 $$\sigma^{2}=gk\tanh kd  \tag{2.1} $$
 
-
 $$\omega=\sigma+\mathbf{k}\cdot\mathbf{U} \tag{2.2}$$
 
 其中 $d$ 为平均水深， $\mathbf{U}$ 为在单个波浪尺度上对水深和时间进行平均后的流速。对水深和流速缓慢变化的假设意味着海底地形具有大尺度特征，在这种情况下通常可以忽略波浪的衍射效应。根据由波浪或谱波分量相位函数所给出的 $\mathbf{k}$ 和 $\omega$ 的通常定义，可以推出波峰数是守恒的（见 Phillips,1977; Mei, 1983）。
@@ -251,10 +250,8 @@ $$\frac{\partial\mathbf{k}}{\partial t}+\nabla\omega=0\tag{2.3}$$
 
 $$F(f_r,\theta)=\frac{\partial k}{\partial f_r}F(k,\theta)=\frac{2\pi}{c_g}F(k,\theta) \tag {2.4}$$
 
-
 $$F(f_a,\theta)=\frac{\partial k}{\partial f_a}F(k,\theta)=\frac{2\pi}{c_g}\left(1+\frac{\mathbf{k}\cdot\mathbf{U}}{kc_g}\right)^{-1}F(k,\theta)
 \tag{2.5}$$
-
 
 $$c_g=\frac{\partial\sigma}{\partial k}=n\frac{\sigma}{k},n=\frac{1}{2}+\frac{kd}{\sinh2kd}\tag{2.6}$$
 
@@ -276,13 +273,10 @@ $$\frac{DN}{Dt}=\frac{S}{\sigma}\tag{2.7}$$
 
 $$\begin{aligned}\frac{\partial N}{\partial t}+\nabla_x\cdot\dot{\mathbf{x}}N+\frac{\partial}{\partial k}\dot{k}N+\frac{\partial}{\partial\theta}\dot{\theta}N=\frac{S}{\sigma}\end{aligned}\tag{2.8}$$
 
-
 $$\mathbf{\dot{x}}=\mathbf{c}_g+\mathbf{U}\tag{2.9}$$
-
 
 $$\begin{aligned}\dot{k}=-\frac{\partial\sigma}{\partial d}\frac{\partial d}{\partial s}-\mathbf{k}\cdot\frac{\partial\mathbf{U}}{\partial s}\end{aligned}
 \tag{2.10}$$
-
 
 $$\begin{aligned}\dot{\theta}=-\frac{1}{k}\left[\frac{\partial\sigma}{\partial d}\frac{\partial d}{\partial m}+\mathbf{k}\cdot\frac{\partial\mathbf{U}}{\partial m}\right]\end{aligned}
 \tag{2.11}$$
@@ -292,12 +286,9 @@ $$\begin{aligned}\dot{\theta}=-\frac{1}{k}\left[\frac{\partial\sigma}{\partial d
 $$\frac{\partial N}{\partial t}+\frac{1}{\cos\phi}\frac{\partial}{\partial\phi}\dot{\phi}N\cos\theta+\frac{\partial}{\partial\lambda}\dot{\lambda}N+\frac{\partial}{\partial k}\dot{k}N+\frac{\partial}{\partial\theta}\dot{\theta}_gN=\frac{S}{\sigma}
 \tag{2.12}$$
 
-
 $$\dot{\phi}=\frac{c_g\cos\theta+U_\phi}{R}\tag{2.13}$$
 
-
 $$\begin{aligned}\dot{\lambda}=\frac{c_g\sin\theta+U_\lambda}{R\cos\phi}\end{aligned}\tag{2.14}$$
-
 
 $$\dot{\theta}_g=\dot{\theta}-\frac{c_g\tan\phi\cos\theta}{R} \tag{2.15}$$
 
@@ -371,7 +362,6 @@ $$\left.\begin{array}{rcl}\theta_{2,\pm}&=&\theta\pm\delta_{\theta,2}\\\theta_{3
 
 $$\begin{array}{ccc}\cos(\delta_{\theta,2})=(1-\lambda)^4+4-(1+\lambda)^4)/[4(1-\lambda)^2]\end{array}\tag{2.22}$$
 
-
 $$\begin{aligned}\sin(\delta_{\theta,3})=\sin(\delta_{\theta,2})(1-\lambda)^2/(1+\lambda)^2\end{aligned}\tag{2.23}$$
 
 因此，对于任意给定的 $\mathbf{k}$ ，其中一个四元组选择 $\mathbf{k}_{2,+}$ 和 $\mathbf{k}_{3,+}$ ，而另一个四元组则选择其镜像形式 $\mathbf{k}_{2,-}$ 、 $\mathbf{k}_{2,-}$ 。由于在 DIA 选取的这两个四元组中，共有 3 个不同的波分量参与相互作用，任意一个离散谱分量 ( $f_r,\theta)$ 实际上会参与到 6 个四元组中，并且与另外 12 个谱分量 $(f_r^{\prime},\theta^{\prime})$ 直接交换能量。
@@ -404,7 +394,6 @@ $$D=1+\frac{c_1}{\bar{k}d}\begin{bmatrix}1-c_2\bar{k}d\end{bmatrix}e^{-c_3\bar{k
 推荐的常数值是 $c1=5.5,c2=5/6,c3=1.25$ (Hasselmann 和 Hasselmann, 1985 )。这里的横杠符号表示对频谱进行直接平均。对于任意参数 $z$，其谱平均定义为
 
 $$\begin{aligned}\bar{z}=E^{-1}\int_0^{2\pi}\int_0^{\infty}zF(f_r,\theta)~df_r~d\theta\end{aligned}\tag{2.28}$$
-
 
 $$E=\int_0^{2\pi}\int_0^\infty F(f_r,\theta)~df_r~d\theta \tag{2.29}$$
 
@@ -1220,15 +1209,11 @@ $$\mathcal{S}_\mathrm{ds}^\mathrm{TURB}\left(k,\theta\right)=-2C_\mathrm{turb}\s
 
 $$\mathcal{S}_{in}(k,\theta)=\frac{\rho_a}{\rho_w}~\sigma~\gamma(k,\theta)~N(k,\theta)\tag{2.145}$$
 
-
 $$\gamma(k,\theta)= G\sqrt{B_n}W \tag{2.146}$$
-
 
 $$\begin{aligned}G=2.8-\left(1+\tanh(10\sqrt{B_n}W-11)\right)\end{aligned}\tag{2.147}$$
 
-
 $$B_n= A(k)~N(k)~\sigma ~k^3 \tag{2.148}$$
-
 
 $$W=\left(\frac{U_s}{c}-1\right)^2\tag{2.149}$$
 
