@@ -859,7 +859,7 @@ $$\tilde f_p\:=\:3.6\:10^{-4}\:+\:0.92\tilde f_{p,i}\:-\:6.3\:10^{-10}\:\tilde f
 
 $$\mathcal{S}_{i,m}=\left\{\begin{array}{cccc}\mathcal{S}_i&\text{for}&\beta\geq0&\text{或}&f>0.8f_p\\X_s\mathcal{S}_i&\text{for}&\beta<0&\text{和}&f<0.6f_p\\\mathcal{X}_s\mathcal{S}_i&\text{for}&\beta<0&\text{和}&0.6f_p<f<0.8f_p\end{array}\right.\tag{2.91}$$
 
-$C_{r}$ 可以设置最大允许阻力系数 $C_r,max$ ，或者一个简单的硬限制
+$C_{r}$ 可以设置最大允许阻力系数 $C_{r,max}$ ，或者一个简单的硬限制
 
 其中， $f$ 为频率， $f_p$ 为由输入源项计算得到的风浪谱峰频率， $\mathcal{S}_i$ 为输入源项（式 2.76）， $0<X_s<1$ 为对 $\mathcal{S}_i$ 的削减系数，该系数仅作用于增长率 $\beta$ 为负的涌浪部分（由用户定义）。 $\mathcal{X}_s$ 表示一个随 $f_p$ 线性变化的削减函数，用于在原始输入与削弱后的输入之间实现平滑过渡。
 
@@ -2458,10 +2458,11 @@ $$\sigma_{\theta}=\left[2\left\{1-\left(\frac{a^{2}+b^{2}}{E^{2}}\right)^{1/2}\r
 $$E(f)=2\pi\int F(\sigma,\theta)\mathrm{d}\theta\ \tag{2.264}$$
 
 2)  TH1M 每个频率的平均方向（度；Kuik 等人，1988）
-    $$\theta_{1}(f)=\operatorname{atan}\left(\frac{b_{1}(f)}{a_{1}(f)}\right)\ \tag{2.265}$$
+$$\theta_{1}(f)=\operatorname{atan}\left(\frac{b_{1}(f)}{a_{1}(f)}\right)\ \tag{2.265}$$
 
-    $$a_{1}(f)=2\pi\int_{0}^{2\pi}\int_{0}^{\infty}\cos(\theta)F(\sigma,\theta)\ \mathrm{d}\theta\ \tag{2.266}$$
-    $$b_{1}(f)=2\pi\int_{0}^{2\pi}\int_{0}^{\infty}\sin(\theta)F(\sigma,\theta)\ \mathrm{d}\theta\ \tag{2.267}$$
+$$a_{1}(f)=2\pi\int_{0}^{2\pi}\int_{0}^{\infty}\cos(\theta)F(\sigma,\theta)\ \mathrm{d}\theta\ \tag{2.266}$$
+
+$$b_{1}(f)=2\pi\int_{0}^{2\pi}\int_{0}^{\infty}\sin(\theta)F(\sigma,\theta)\ \mathrm{d}\theta\ \tag{2.267}$$
 
 3)  STH1M 每个频率的第一个定向扩展 (degr.; )
 
@@ -2515,6 +2516,8 @@ $$U_p = C_{mult} U_{10} \cos(\theta - \theta_w) \tag{2.275}$$
 16) TWS 整个频谱中的风海部分。
 17) PNR 频谱中找到的分区数。
 
+
+
 ### 2.6.5 大气波层
 
 1)  UST 摩擦速度 $u_*$ （标量）。定义取决于所选源项参数化 (m/s)。另一种载体
@@ -2538,10 +2541,10 @@ $$C_g E = \rho_w g \overline{C_g} E\tag{2.276}$$
 
 1)  SXY 辐射应力
 
-    $$S_{xx} = \rho_w g \iint (n - 0.5 + n \cos^2 \theta) F(k, \theta) \, dk ~d\theta\tag{2.277}$$
-    $$S_{xy} = \rho_w g \iint n \sin \theta \cos \theta F(k, \theta) \, dk ~d\theta\tag{2.278}$$
+$$S_{xx} = \rho_w g \iint (n - 0.5 + n \cos^2 \theta) F(k, \theta) \, dk ~d\theta\tag{2.277}$$
+$$S_{xy} = \rho_w g \iint n \sin \theta \cos \theta F(k, \theta) \, dk ~d\theta\tag{2.278}$$
 
-    $$S_{yy} = \rho_w g \iint (n - 0.5 + n \sin^2 \theta) F(k, \theta) \, dk ~d\theta\tag{2.279}$$
+$$S_{yy} = \rho_w g \iint (n - 0.5 + n \sin^2 \theta) F(k, \theta) \, dk ~d\theta\tag{2.279}$$
 
 其中
 
@@ -4337,15 +4340,11 @@ ww3_uprstr 将背景谱的 SWH 设置为分析得到的 SWH，并根据用户预
 - 分析输入文件。文件名可以任意，但后缀决定导入数据所用的读取器。大多数选项下，读取器仅支持 grbtxt 格式。该文本文件由 wgrib2 从分析的 grib2 文件生成，具有特定结构。
 
 运行可执行文件：
-
-> \$EXE/ww3_uprstr
-
+<big><center> $EXE/ww3_uprstr</center></big>
 如果所有输入准备正确，将生成新的重启文件（restart001.ww3）。ww3_uprstr 以与 restart.ww3 相同的格式导出更新后的谱。
 
 要用于下一次预测周期的初始化，需要重命名：
-
-> mv restart001.ww3 restart.ww3
-
+<big><center>mv restart001.ww3 restart.ww3</center></big>
 更新后的重启文件可按常规使用。
 
 ------------------------------------------------------------------------
@@ -4462,15 +4461,11 @@ git checkout VERTAG
 第一步是运行脚本 model/bin/w3_setup，该脚本会编译辅助程序并生成环境文件 WWATCH3.ENV，文件将保存在 bin 目录下。该文件设置了默认的 C 和 FORTRAN 编译器选项，仅在预处理器中使用。除特殊情况外，可直接使用默认设置。
 
 运行脚本可显示完整用法；若要执行并指定源代码目录（model 目录位置），在顶层目录下运行：
-
 <big>
 <center>
-
 ./model/bin/w3_setup model
 </center>
-
 </big>
-
 可通过重新运行 w3_setup 脚本或手动编辑 setup 文件修改配置。WAVEWATCH III 的"home"目录只能通过编辑或删除本地 wwatch3.env 文件修改。
 
 以前版本需要定义用户环境变量 WWATCH3_ENV 来指定 wwatch3.env 的路径，现在已不再需要。同时，也不再提供全局安装选项。
@@ -4683,7 +4678,7 @@ w3_make 使用了前一节中介绍的多个脚本。其工作流程可见图 5.
 
 在 Makefile 完成后，使用标准 UNIX make 工具编译和链接程序。Makefile 并非直接调用 FORTRAN 编译器，而是调用预处理器和编译脚本 ad3 与 comp，以及链接脚本 link。ad3 脚本根据文件名的扩展名决定所需操作：扩展名为 .ftn 的文件由 w3adc 处理，扩展名为 .f 或 .f90 的文件直接发送给 comp 脚本。虽然用户可以尝试交互式运行这些脚本，但通常只需要运行 w3_make 即可完成编译。
 
-    辅助脚本如 w3_make 等使用的是 WAVEWATCH III 主目录下 ./bin 目录中的 switch、comp 和 link 文件，而不是本地目录中的文件。
+辅助脚本如 w3_make 等使用的是 WAVEWATCH III 主目录下 ./bin 目录中的 switch、comp 和 link 文件，而不是本地目录中的文件。
 
 在进行适当修改或复制了示例脚本之后，WAVEWATCH III 的部分或全部程序即可进行编译和链接。首次编译程序时，建议逐个模块进行编译，以避免大量错误信息，同时在 comp 脚本中设置错误捕捉。一个好的起点是编译简单的测试代码 ctest。首先进入工作目录，并通过以下命令建立到该例程源代码的链接：
 <big>
@@ -5076,7 +5071,7 @@ alt="200" />
 <big>
 <center>
 
-ww3_grid \> ww3_grid.out
+ww3_grid > ww3_grid.out
 </center>
 
 </big>
@@ -7067,7 +7062,7 @@ COU OASIS OASACM OASOCM
 <big>
 <center>
 
-mpirun -np \$nbre_cores WW3_exe : -np \$nbre_cores OA_exe
+mpirun -np $nbre_cores WW3_exe : -np $nbre_cores_OA_exe_OA
 </center>
 
 </big>
@@ -7091,9 +7086,7 @@ mpirun -np \$nbre_cores WW3_exe : -np \$nbre_cores OA_exe
 ### F.2 构建与安装 NUOPC 封装
 
 要生成包含 WAVEWATCH III 代码及其封装、并可嵌入 NUOPC 耦合模式中的库文件，应使用 modelesmfMakefile。例如，在 NOAA 的环境建模系统（NEMS）中，执行命令：
-
-make ww3 nems
-
+<big><center>make ww3_nems</center></big>
 该 makefile 会随后调用 w3_make。在构建过程中，还会生成一个名为 nuopc.mk 的 makefile 片段文件，用于告知 NUOPC/ESMF WAVEWATCH III 库文件所在的位置。
 
 此外新增了一个开关 WRST，用于在重启动文件中加入 10 米高度风场，并在波浪模式的初始时间步使用该风场。当耦合的大气模式在初始化时未提供 10 米风速数据时，可使用该功能。
