@@ -1,0 +1,17 @@
+{
+  "accentColor": "#9d60be",
+  "cssTheme": "Obsidian Nord",
+  "translucency": false,
+  "baseFontSize": 20,
+  "enabledCssSnippets": [
+    "img",
+    "tableStyles",
+    "mark",
+    "Preference"
+  ],
+  "showViewHeader": false,
+  "textFontFamily": "SF Pro Rounded,Kai,Arial Rounded MT Bold",
+  "theme": "system",
+  "interfaceFontFamily": "",
+  "showRibbon": false
+}

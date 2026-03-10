@@ -1,0 +1,236 @@
+{
+  "main": {
+    "id": "fc7e39a0b128d489",
+    "type": "split",
+    "children": [
+      {
+        "id": "8e5819d6264f334b",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "f3bfc46147fe8bff",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Apple 开发/Swift.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Swift"
+            }
+          },
+          {
+            "id": "6b9a628663b5cec5",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "新标签页"
+            }
+          },
+          {
+            "id": "9a74179a7e45b62e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "计算机八股/数据库.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "数据库"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "6274c3466242555a",
+    "type": "mobile-drawer",
+    "children": [
+      {
+        "id": "443eebc5ae93eab5",
+        "type": "leaf",
+        "state": {
+          "type": "file-explorer",
+          "state": {
+            "sortOrder": "alphabetical",
+            "autoReveal": false
+          },
+          "icon": "lucide-folder-closed",
+          "title": "文件列表"
+        }
+      },
+      {
+        "id": "8654b3089fa7dbb7",
+        "type": "leaf",
+        "state": {
+          "type": "search",
+          "state": {
+            "query": "",
+            "matchingCase": false,
+            "explainSearch": false,
+            "collapseAll": false,
+            "extraContext": false,
+            "sortOrder": "alphabetical"
+          },
+          "icon": "lucide-search",
+          "title": "搜索"
+        }
+      },
+      {
+        "id": "6092f104a73fe8a8",
+        "type": "leaf",
+        "state": {
+          "type": "tag",
+          "state": {
+            "sortOrder": "frequency",
+            "useHierarchy": true
+          },
+          "icon": "lucide-ghost",
+          "title": "tag"
+        }
+      },
+      {
+        "id": "cecd72112184eba9",
+        "type": "leaf",
+        "state": {
+          "type": "bookmarks",
+          "state": {},
+          "icon": "lucide-ghost",
+          "title": "bookmarks"
+        }
+      }
+    ],
+    "currentTab": 0
+  },
+  "right": {
+    "id": "4934e6d834257646",
+    "type": "mobile-drawer",
+    "children": [
+      {
+        "id": "bfb2ff9d0ef72337",
+        "type": "leaf",
+        "state": {
+          "type": "backlink",
+          "state": {
+            "file": "高等数学下.md",
+            "collapseAll": true,
+            "extraContext": false,
+            "sortOrder": "alphabetical",
+            "showSearch": true,
+            "searchQuery": "",
+            "backlinkCollapsed": false,
+            "unlinkedCollapsed": false
+          },
+          "icon": "links-coming-in",
+          "title": "反向链接"
+        }
+      },
+      {
+        "id": "50b523f7bc6b959c",
+        "type": "leaf",
+        "state": {
+          "type": "outgoing-link",
+          "state": {
+            "file": "计算机网络.md",
+            "linksCollapsed": false,
+            "unlinkedCollapsed": true
+          },
+          "icon": "links-going-out",
+          "title": "出链"
+        }
+      },
+      {
+        "id": "c8e13ed4dccf9428",
+        "type": "leaf",
+        "state": {
+          "type": "outline",
+          "state": {
+            "file": "研究生导师选择.md",
+            "followCursor": false,
+            "showSearch": false,
+            "searchQuery": ""
+          },
+          "icon": "lucide-list",
+          "title": "大纲"
+        }
+      },
+      {
+        "id": "2a14e6eb42c63e29",
+        "type": "leaf",
+        "state": {
+          "type": "calendar",
+          "state": {},
+          "icon": "lucide-ghost",
+          "title": "calendar"
+        }
+      }
+    ],
+    "currentTab": 2
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "bases:创建新数据库": false,
+      "switcher:打开快速切换": false,
+      "canvas:新建白板": false,
+      "command-palette:打开命令面板": false,
+      "workspaces:管理工作区布局": false
+    }
+  },
+  "active": "f3bfc46147fe8bff",
+  "lastOpenFiles": [
+    "计算机八股/408 真题.md",
+    "ios 开发/Swift.md",
+    "ios 开发/Swift UI.md",
+    "计算机八股/数据结构.md",
+    "数学/数学错题.md",
+    "README.md",
+    "计算机八股/八股文.md",
+    "Python.md",
+    "ios 开发/极限复试.md",
+    "计算机八股/数据库.md",
+    "线性代数.md",
+    "iOS 开发.md",
+    "数据结构.md",
+    "数据库.md",
+    "软件工程.md",
+    "media/Pasted image 20250110224739.png",
+    "离散数学.md",
+    "英语.md",
+    "计算机组成原理.md",
+    "media/Pasted image 20250103105402.png",
+    "media/Pasted image 20250102230608.png",
+    "media/Pasted image 20250102225632.png",
+    "media/Pasted image 20250102213157.png",
+    "操作系统.md",
+    "机器学习.md",
+    "高等数学上.md",
+    "考研数学真题.md",
+    "数学错题.md",
+    "media/Pasted image 20241230123551.png",
+    "media/Pasted image 20241230145614.png",
+    "media/Pasted image 20241230123137.png",
+    "media/Pasted image 20241228222038.png",
+    "概率论与数理统计.md",
+    "高等数学下.md",
+    "media/未命名绘图.drawio 309.svg",
+    "408 真题.md",
+    "media/定点小数.drawio",
+    "media/计网.drawio",
+    "media/随机存取.drawio",
+    "media/直接文件.drawio",
+    "media/链式存储.drawio",
+    "media/路由表.drawio",
+    "media/MIPS指令格式.drawio",
+    "media/select.drawio",
+    "media/ieeeFloat.drawio",
+    "media/未命名绘图.drawio"
+  ]
+}

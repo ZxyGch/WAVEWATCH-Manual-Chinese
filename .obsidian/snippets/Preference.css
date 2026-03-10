@@ -1,0 +1,184 @@
+
+/*************** 自定义小标题效果，分为白天和黑夜 ***************/
+
+.theme-light{
+    p.day-night-paragraph {
+        border-left: 5px dashed;
+        padding-left:10px;
+        color: rgb(102, 14, 142);
+        
+        font-weight: bold;
+        font-size: 16pt;
+    }
+    
+    p.day-night-paragraph2 {
+      border-bottom: 2px solid;
+      padding-bottom: 10px;
+        color: rgb(14, 106, 142);
+        font-weight: bold;
+        font-size: 16pt;
+    }
+    
+  
+    p.day-night-paragraph3 {
+      border-bottom: 2px dashed;
+      padding-bottom: 10px;
+        color: rgb(171, 19, 87);
+        font-weight: bold;
+        font-size: 16pt;
+    }
+}
+
+.theme-dark{
+    p.day-night-paragraph {
+        border-left: 5px dashed;
+       
+        padding-left:10px;
+        color: rgb(37, 176, 162);
+        font-weight: bold;
+        font-size: 17pt;
+    }
+
+    p.day-night-paragraph2 {
+      
+      border-bottom: 2px solid;
+      padding-bottom: 10px;
+      
+      color: rgba(254, 201, 39, 0.91);
+      font-weight: bold;
+      font-size: 16pt;
+    }
+
+    p.day-night-paragraph3 {
+      border-bottom: 2px dashed;
+      padding-bottom: 10px;
+      color: rgb(225, 51, 164);
+      font-weight: bold;
+    }
+
+    p.day-night-paragraph4 {
+      border-left: 2px dashed;
+      padding-left: 10px;
+      color: rgb(225, 51, 164);
+      font-weight: bold;
+    }
+}
+
+
+
+/************* 自定义 H12345 标题效果 ************/
+
+
+.HyperMD-header .cm-header {
+    border-left: 5px solid;
+    padding-left:10px;
+
+}
+
+/************** 页面宽度设置 ***************/
+
+body{
+  --file-line-width: 42rem;  /* default is 45rem */
+}
+
+.cm-indent{
+  font-size: 5pt;
+}
+
+
+/*************** 行首缩进 ***************/
+
+.markdown-source-view.mod-cm6 div.cm-line:not(.HyperMD-header):not(.HyperMD-list-line):not(.cm-indent):not(.hr ) {
+  text-indent: 1.9em;
+}
+
+
+.description:not(li){
+    text-indent: 1.5em;
+}
+
+.markdown-source-view.mod-cm6 div.cm-line:not(.HyperMD-header):not(li) .cm-hmd-frontmatter:first-of-type
+ {
+  margin-left: -1em;
+}
+.markdown-source-view.mod-cm6 div.has-banner.cm-line:not(.HyperMD-header) .cm-def.cm-hmd-frontmatter,
+.markdown-source-view.mod-cm6 div.has-banner.cm-line:not(.HyperMD-header) .collapse-indicator {
+  margin-left: 0;
+  left: -3em;
+}
+
+[data-type="markdown"] div[class="el-p"]:not(blockquote) > p{
+  text-indent: 2em;
+}
+
+
+[data-type="markdown"] div[class="el-p"]:not(blockquote) > p>br {
+  content: ' ';
+  white-space: pre;
+  line-height: calc((var(--paragraph-spacing) + 0.3)*1em);
+  display:unset;
+}
+[data-type="markdown"] div[class="el-p"]:not(blockquote) > p>br::after {
+   content: '\A\9\A0\A0';
+}
+
+
+/*************** 数学公式字体大小设置 ***************/
+
+
+mjx-frac{
+    font-size:22pt
+}
+
+.math-block{
+    font-size:18pt
+}
+
+
+.math-block mjx-frac{
+    font-size:18pt
+}
+
+
+.math:not(.math-block):not(mjx-frac){
+  font-size:16pt;
+}
+
+/************ 图片居中 ********/
+
+img {
+  display: block !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+iframe{
+display: block !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+
+
+/******************* 表格居中放大 *****************/
+
+
+.markdown-source-view.mod-cm6 .cm-content > * {
+  margin: auto auto !important;
+}
+
+.markdown-reading-view table {
+  margin: 0 auto;
+  max-width: 100%;
+  width: 100%;
+}
+
+.markdown-source-view.mod-cm6 .cm-table-widget .table-wrapper {
+  margin: 0 auto;
+  max-width: 100%;
+  width: 100%;
+}
+
+table{
+  min-width: 100%;
+}
+

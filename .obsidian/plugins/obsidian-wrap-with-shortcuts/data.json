@@ -1,0 +1,76 @@
+{
+  "wrapperTags": [
+    {
+      "id": "w1723879837514",
+      "name": "align",
+      "startTag": "\\begin{aligned} \n",
+      "endTag": "\\end{aligned}"
+    },
+    {
+      "id": "w1719762956845",
+      "name": "big",
+      "startTag": "<big><center>",
+      "endTag": "</center></big>"
+    },
+    {
+      "id": "w1723254998625",
+      "name": "gather",
+      "startTag": "\\begin{gather}",
+      "endTag": "\\end{gather}"
+    },
+    {
+      "id": "w1750726841668",
+      "name": "js",
+      "startTag": "```js\n",
+      "endTag": "\n```"
+    },
+    {
+      "id": "underline",
+      "name": "link",
+      "startTag": "[",
+      "endTag": "](###)"
+    },
+    {
+      "id": "w1719370075380",
+      "name": "mark",
+      "startTag": "<p class= \"day-night-paragraph\"> ",
+      "endTag": "</p>"
+    },
+    {
+      "id": "w1719556770662",
+      "name": "mark2",
+      "startTag": "<p class= \"day-night-paragraph2\">",
+      "endTag": "</p>"
+    },
+    {
+      "id": "w1724488204542",
+      "name": "mark3",
+      "startTag": "<p class= \"day-night-paragraph3\">例子</p>\n",
+      "endTag": " "
+    },
+    {
+      "id": "w1736747819627",
+      "name": "mysql",
+      "startTag": "```swift\n",
+      "endTag": "\n```"
+    },
+    {
+      "id": "w1747228037959",
+      "name": "objc",
+      "startTag": "```objc\n",
+      "endTag": "\n```"
+    },
+    {
+      "id": "w1745935342130",
+      "name": "py",
+      "startTag": "```python\n",
+      "endTag": "\n```"
+    },
+    {
+      "id": "w1719981448377",
+      "name": "text",
+      "startTag": "\\text{",
+      "endTag": "}"
+    }
+  ]
+}

@@ -1,0 +1,206 @@
+{
+  "main": {
+    "id": "678cd81ffcfee995",
+    "type": "split",
+    "children": [
+      {
+        "id": "1c126adba59793b3",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "5e37163ee7b36cc5",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "README.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "README"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "e40431304e234b30",
+    "type": "split",
+    "children": [
+      {
+        "id": "bf172886fc8c6c49",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "cc1726051ad4b2e2",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "文件列表"
+            }
+          },
+          {
+            "id": "849550d2da627cc7",
+            "type": "leaf",
+            "state": {
+              "type": "quiet-outline",
+              "state": {},
+              "icon": "lines-of-text",
+              "title": "Quiet Outline"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 274.5
+  },
+  "right": {
+    "id": "2b9027c156308cb6",
+    "type": "split",
+    "children": [
+      {
+        "id": "ee29855bc1f11daa",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "8b89d2e276044465",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "操作系统.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "操作系统 的反向链接列表"
+            }
+          },
+          {
+            "id": "239baa9ffe14ac10",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Python/数据分析与可视化.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "数据分析与可视化 的出链列表"
+            }
+          },
+          {
+            "id": "fbf248afbb268ee3",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "搜索"
+            }
+          },
+          {
+            "id": "46b4e7d06a273685",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "海洋科学/WAVEWATCH  手册.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "WAVEWATCH  手册 的大纲"
+            }
+          }
+        ],
+        "currentTab": 3
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "bases:新建数据库": false,
+      "switcher:打开快速切换": false,
+      "canvas:新建白板": false,
+      "command-palette:打开命令面板": false,
+      "workspaces:管理工作区布局": false
+    }
+  },
+  "active": "5e37163ee7b36cc5",
+  "lastOpenFiles": [
+    "media/截屏2026-03-10 15.31.47.png",
+    "WAVEWATCH III 中文手册.md",
+    "README.md",
+    "media/截屏2026-03-10 15.29.15.png",
+    "media/截屏2026-03-10 15.29.02.png",
+    "media/fe88dca8c138e37fac5b8838c1dbfecd9f84a884.png",
+    "media/fe3e1ace8e01d8249ef1f2fdadb194c490ccd2d0.png",
+    "media/fb5669c074183e8a56e76faf000758d003aebf05.png",
+    "media/fa18ec2598b9b4dc8685956523ec38e69c7bc2b6.png",
+    "media/f920120fdbb18eaa128da0a64dc490be62aa48f2.png",
+    "media/f2e89cc010d7e4fa4ce5fae52886525a7f5061a5.png",
+    "media/ea69c0137eae8959b1a95eb284ea3a1911ceb562.png",
+    "media/e44e28394b17a73b56c7abb31267c091fc6973d3.png",
+    "media",
+    "海洋科学/WAVEWATCH III 中文手册.md",
+    "未命名",
+    "海洋科学/WAVEWATCH III 中文手册~.md",
+    "Python/Python.md",
+    "Java.md",
+    "Web 前端/JavaScript.md",
+    "数学/概率论与数理统计.md",
+    "海洋科学/README.zh-CN.md",
+    "海洋科学/README.md",
+    "海洋科学/WAVEWATCH III.md",
+    "未命名 1",
+    "海洋科学/WAVEWATCH III INSTALL TUTORIAL.md",
+    "海洋科学/Fortran.md",
+    "海洋科学/Matlab.md",
+    "数学/高等数学下.md",
+    "计算机八股/软件工程(废弃).md",
+    "海洋科学/().md",
+    "数学/高等数学上.md",
+    "数学/离散数学.md",
+    "计算机八股/汇编语言.md",
+    "英语/作文.md",
+    "英语/词组.md",
+    "Python/数据分析与可视化.md",
+    "海洋科学/海洋科学.md",
+    "数学/线性代数.md",
+    "Untitled",
+    "海洋科学",
+    "废弃/北航",
+    "计算机八股",
+    "废弃",
+    "未命名文件夹",
+    "英语",
+    "未命名.canvas"
+  ]
+}
