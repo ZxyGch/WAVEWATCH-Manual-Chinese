@@ -182,12 +182,33 @@ body.theme-dark {
 /*************** 行首缩进 ***************/
 
 /* 围栏代码行不参与段落首行缩进（含 ``` 起止行） */
-.markdown-source-view.mod-cm6 div.cm-line:not(.HyperMD-header):not(.HyperMD-list-line):not(.cm-indent):not(.hr ):not(.HyperMD-codeblock):not(.HyperMD-codeblock-begin):not(.HyperMD-codeblock-end) {
+.markdown-source-view.mod-cm6 div.cm-line:not(.HyperMD-header):not(.HyperMD-list-line):not(.HyperMD-quote):not(.cm-indent):not(.hr ):not(.HyperMD-codeblock):not(.HyperMD-codeblock-begin):not(.HyperMD-codeblock-end) {
   text-indent: 1.9em;
 }
 
 .markdown-source-view.mod-cm6 div.cm-line:is(.HyperMD-codeblock, .HyperMD-codeblock-begin, .HyperMD-codeblock-end) {
   text-indent: 0 !important;
+}
+
+.markdown-source-view.mod-cm6 div.cm-line.HyperMD-quote,
+.markdown-reading-view blockquote p,
+.markdown-preview-view blockquote p,
+.markdown-rendered blockquote p {
+  text-indent: 0 !important;
+}
+
+.markdown-source-view.mod-cm6 div.cm-line.HyperMD-quote {
+  border-left-width: 0 !important;
+  padding-left: 0.45em !important;
+}
+
+.markdown-source-view.mod-cm6 .HyperMD-quote .cm-formatting-quote {
+  display: inline-block;
+  width: 0;
+  margin-right: 0 !important;
+  overflow: visible;
+  position: relative;
+  left: -0.45em;
 }
 
 /* 阅读/实时预览：pre 不受段落 text-indent 继承影响 */

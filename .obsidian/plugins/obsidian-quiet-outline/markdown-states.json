@@ -416,20 +416,19 @@
     ]
   },
   "Apple 开发/UIKit.md": {
-    "scroll": 5937.296073717948,
+    "scroll": 94.32051282051282,
     "cursor": {
       "from": {
-        "line": 5414,
+        "line": 150,
         "ch": 0
       },
       "to": {
-        "line": 5414,
+        "line": 150,
         "ch": 0
       }
     },
     "expandedKeys": [
-      "item-2-215",
-      "item-1-214"
+      "item-1-1"
     ]
   },
   "Apple 开发/Swift UI.md": {
@@ -669,23 +668,6 @@
     },
     "expandedKeys": [
       "item-1-4"
-    ]
-  },
-  "WAVEWATCH III 中文手册.md": {
-    "scroll": 1059.0757606907894,
-    "cursor": {
-      "from": {
-        "line": 6,
-        "ch": 163
-      },
-      "to": {
-        "line": 6,
-        "ch": 163
-      }
-    },
-    "expandedKeys": [
-      "item-2-10",
-      "item-1-7"
     ]
   }
 }
