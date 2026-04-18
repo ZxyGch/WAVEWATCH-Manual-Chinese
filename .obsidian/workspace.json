@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "1c126adba59793b3",
+        "id": "a93585997369d750",
         "type": "tabs",
         "children": [
           {
-            "id": "5e37163ee7b36cc5",
+            "id": "0a94f95f8889f297",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -57,12 +57,11 @@
               "title": "Quiet Outline"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 274.5
+    "width": 302.5
   },
   "right": {
     "id": "2b9027c156308cb6",
@@ -128,13 +127,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "海洋科学/WAVEWATCH  手册.md",
+                "file": "海洋科学/WAVEWATCH III 中文手册.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "WAVEWATCH  手册 的大纲"
+              "title": "WAVEWATCH III 中文手册 的大纲"
             }
           }
         ],
@@ -154,53 +153,54 @@
       "workspaces:管理工作区布局": false
     }
   },
-  "active": "849550d2da627cc7",
+  "active": "0a94f95f8889f297",
   "lastOpenFiles": [
-    "README.md",
-    "WAVEWATCH III 中文手册.md",
-    "manual-en.pdf",
-    "manual.pdf",
-    "media/截屏2026-03-10 15.31.47.png",
-    "media/截屏2026-03-10 15.29.15.png",
-    "media/截屏2026-03-10 15.29.02.png",
-    "media/fe88dca8c138e37fac5b8838c1dbfecd9f84a884.png",
-    "media/fe3e1ace8e01d8249ef1f2fdadb194c490ccd2d0.png",
-    "media/fb5669c074183e8a56e76faf000758d003aebf05.png",
-    "media/fa18ec2598b9b4dc8685956523ec38e69c7bc2b6.png",
-    "media/f920120fdbb18eaa128da0a64dc490be62aa48f2.png",
-    "media/f2e89cc010d7e4fa4ce5fae52886525a7f5061a5.png",
-    "media/ea69c0137eae8959b1a95eb284ea3a1911ceb562.png",
-    "media",
-    "海洋科学/WAVEWATCH III 中文手册.md",
-    "未命名",
-    "海洋科学/WAVEWATCH III 中文手册~.md",
-    "Python/Python.md",
-    "Java.md",
+    "Apple 开发/Swift UI.md",
+    "Apple 开发/UIKit.md",
     "Web 前端/JavaScript.md",
-    "数学/概率论与数理统计.md",
-    "海洋科学/README.zh-CN.md",
-    "海洋科学/README.md",
-    "海洋科学/WAVEWATCH III.md",
-    "未命名 1",
+    "Web 前端/Node.js.md",
+    "Python/Python.md",
+    "计算机八股/操作系统.md",
+    "计算机八股/408 真题.md",
     "海洋科学/WAVEWATCH III INSTALL TUTORIAL.md",
-    "海洋科学/Fortran.md",
-    "海洋科学/Matlab.md",
-    "数学/高等数学下.md",
-    "计算机八股/软件工程(废弃).md",
-    "海洋科学/().md",
-    "数学/高等数学上.md",
-    "数学/离散数学.md",
+    "海洋科学/WAVEWATCH III 中文手册.md",
+    "海洋科学/WAVEWATCH III.md",
+    "废弃/备忘录.md",
+    "计算机八股/计算机组成原理.md",
+    "计算机八股/计算机网络.md",
     "计算机八股/汇编语言.md",
-    "英语/作文.md",
-    "英语/词组.md",
+    "计算机八股/数据库.md",
+    "计算机八股/设计模式.md",
+    "计算机八股/数据结构.md",
+    "数学/概率论与数理统计.md",
+    "计算机八股/八股文.md",
+    "Web 前端/Vue.md",
+    "Apple 开发/Xcode.md",
+    "Apple 开发/Cocoa.md",
+    "Apple 开发/iOS 面试八股文.md",
+    "Apple 开发/Swift.md",
+    "Apple 开发/Objective - C.md",
     "Python/数据分析与可视化.md",
-    "海洋科学/海洋科学.md",
-    "数学/线性代数.md",
+    "media/截屏2026-04-13 18.42.33.png",
+    "media/截屏2026-04-13 18.07.09.png",
+    "media/截屏2026-04-13 14.23.24.png",
+    "media/截屏2026-04-13 10.56.31.png",
+    "media/截屏2026-04-13 10.39.59.png",
+    "media/截屏2026-04-13 10.33.48.png",
+    "media/未命名绘图.drawio 28.png",
+    "media/截屏2026-04-12 19.21.18.png",
+    "media/截屏2026-04-12 18.58.47.png",
+    "media/截屏2026-04-12 16.31.53.png",
+    "未命名",
+    "未命名 1",
     "Untitled",
     "海洋科学",
     "废弃/北航",
     "计算机八股",
     "废弃",
+    "未命名文件夹",
+    "英语",
+    "Web 前端",
     "未命名.canvas"
   ]
 }

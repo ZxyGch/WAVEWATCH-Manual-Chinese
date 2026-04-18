@@ -4,45 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "8e5819d6264f334b",
+        "id": "09c578bab3034338",
         "type": "tabs",
         "children": [
           {
-            "id": "f3bfc46147fe8bff",
+            "id": "a4b037cbb8f9d41d",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Apple 开发/Swift.md",
+                "file": "Apple 开发/UIKit.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Swift"
-            }
-          },
-          {
-            "id": "6b9a628663b5cec5",
-            "type": "leaf",
-            "state": {
-              "type": "empty",
-              "state": {},
-              "icon": "lucide-file",
-              "title": "新标签页"
-            }
-          },
-          {
-            "id": "9a74179a7e45b62e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "计算机八股/数据库.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "数据库"
+              "title": "UIKit"
             }
           }
         ]
@@ -153,7 +129,7 @@
         "state": {
           "type": "outline",
           "state": {
-            "file": "研究生导师选择.md",
+            "file": "Apple 开发/UIKit.md",
             "followCursor": false,
             "showSearch": false,
             "searchQuery": ""
@@ -177,15 +153,20 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "bases:创建新数据库": false,
+      "bases:新建数据库": false,
       "switcher:打开快速切换": false,
       "canvas:新建白板": false,
       "command-palette:打开命令面板": false,
       "workspaces:管理工作区布局": false
     }
   },
-  "active": "f3bfc46147fe8bff",
+  "active": "c8e13ed4dccf9428",
   "lastOpenFiles": [
+    "海洋科学/WAVEWATCH III 中文手册.md",
+    "Apple 开发/Objective - C.md",
+    "数学/高等数学下.md",
+    "Apple 开发/Swift.md",
+    "计算机八股/数据库.md",
     "计算机八股/408 真题.md",
     "ios 开发/Swift.md",
     "ios 开发/Swift UI.md",
@@ -195,7 +176,6 @@
     "计算机八股/八股文.md",
     "Python.md",
     "ios 开发/极限复试.md",
-    "计算机八股/数据库.md",
     "线性代数.md",
     "iOS 开发.md",
     "数据结构.md",
@@ -213,15 +193,11 @@
     "机器学习.md",
     "高等数学上.md",
     "考研数学真题.md",
-    "数学错题.md",
     "media/Pasted image 20241230123551.png",
     "media/Pasted image 20241230145614.png",
     "media/Pasted image 20241230123137.png",
     "media/Pasted image 20241228222038.png",
-    "概率论与数理统计.md",
-    "高等数学下.md",
     "media/未命名绘图.drawio 309.svg",
-    "408 真题.md",
     "media/定点小数.drawio",
     "media/计网.drawio",
     "media/随机存取.drawio",

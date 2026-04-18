@@ -442,18 +442,18 @@
       }
     }
   },
-  "selectedTheme": "new",
+  "selectedTheme": "Default",
   "currentTheme": {
     "settings": {
       "codeblock": {
-        "lineNumbers": false,
+        "lineNumbers": true,
         "unwrapLines": true,
-        "wrapLinesActive": false,
-        "curvature": 3
+        "wrapLinesActive": true,
+        "curvature": 4
       },
       "gutter": {
         "highlight": true,
-        "activeLine": true
+        "activeLine": false
       },
       "header": {
         "title": {
@@ -462,10 +462,10 @@
           "textItalic": true
         },
         "languageTag": {
-          "display": "if_header_shown",
+          "display": "always",
           "textFont": "",
-          "textBold": true,
-          "textItalic": true
+          "textBold": false,
+          "textItalic": false
         },
         "languageIcon": {
           "display": "always",
@@ -480,8 +480,8 @@
         "foldPlaceholder": ""
       },
       "highlights": {
-        "activeCodeblockLine": true,
-        "activeEditorLine": true
+        "activeCodeblockLine": false,
+        "activeEditorLine": false
       },
       "inline": {
         "syntaxHighlight": true,
@@ -495,31 +495,31 @@
       },
       "advanced": {
         "gradientHighlights": true,
-        "gradientHighlightsColourStop": "70%",
+        "gradientHighlightsColourStop": "72%",
         "languageBorderColour": true,
-        "languageBorderWidth": 5,
-        "iconSize": 20
+        "languageBorderWidth": 3,
+        "iconSize": 28
       }
     },
     "colours": {
       "light": {
         "codeblock": {
           "backgroundColour": "#DAE1E32E",
-          "textColour": "#EC7575"
+          "textColour": "--code-normal"
         },
         "gutter": {
-          "backgroundColour": "#F1F1F1",
+          "backgroundColour": "#EDEDED",
           "textColour": "--text-faint",
           "activeTextColour": "--text-muted"
         },
         "header": {
-          "backgroundColour": "--code-background",
+          "backgroundColour": "#D7D7D77A",
           "title": {
-            "textColour": "--code-comment"
+            "textColour": "#22262B"
           },
           "languageTag": {
             "backgroundColour": "--code-background",
-            "textColour": "--code-comment"
+            "textColour": "#1F1A21"
           },
           "externalReference": {
             "displayRepositoryColour": "#00FFFF",
@@ -529,9 +529,9 @@
           "lineColour": "--color-base-30"
         },
         "highlights": {
-          "activeCodeblockLineColour": "#8FB3E278",
+          "activeCodeblockLineColour": "--color-base-30",
           "activeEditorLineColour": "--color-base-20",
-          "defaultColour": "--text-highlight-bg",
+          "defaultColour": "#07609D66",
           "alternativeHighlights": {}
         },
         "inline": {
@@ -556,12 +556,12 @@
           "activeTextColour": "--text-muted"
         },
         "header": {
-          "backgroundColour": "#3B4252CF",
+          "backgroundColour": "--code-background",
           "title": {
             "textColour": "--code-comment"
           },
           "languageTag": {
-            "backgroundColour": "#3B4252BF",
+            "backgroundColour": "--code-background",
             "textColour": "--code-comment"
           },
           "externalReference": {

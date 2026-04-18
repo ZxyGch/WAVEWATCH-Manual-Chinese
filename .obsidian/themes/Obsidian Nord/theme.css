@@ -23,7 +23,7 @@
 
     --frost0_x: 143,188,187; /* #8fbcbb */
     --frost0:   rgb(var(--frost0_x));
-    --frost1_x: 144, 107, 192; /* #88c0d0 */
+    --frost1_x: 232, 102, 102; /* #88c0d0 */
     --frost1:   rgb(var(--frost1_x));
     --frost2_x: 129,161,193; /* #81a1c1 */
     --frost2:   rgb(var(--frost2_x));
@@ -38,7 +38,7 @@
     --orange:   rgb(var(--orange_x));
     --yellow_x: 238, 189, 110; /* #ebcb8b */
     --yellow:   rgb(var(--yellow_x));
-    --green_x:  223, 79, 132  ; /* #a3be8c  字体加粗高亮颜色设置 */ 
+    --green_x:  0, 0, 0  ; /* #a3be8c  字体加粗高亮颜色设置 */ 
     --green:    rgb(var(--green_x));
     --purple_x: 65, 105, 225; /* #b48ead */
     --purple:   rgb(var(--purple_x));

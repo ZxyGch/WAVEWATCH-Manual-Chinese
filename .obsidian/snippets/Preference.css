@@ -1,84 +1,177 @@
-
-/*************** 自定义小标题效果，分为白天和黑夜 ***************/
-
-.theme-light{
-    p.day-night-paragraph {
-        border-left: 5px dashed;
-        padding-left:10px;
-        color: rgb(102, 14, 142);
-        
-        font-weight: bold;
-        font-size: 16pt;
-    }
-    
-    p.day-night-paragraph2 {
-      border-bottom: 2px solid;
-      padding-bottom: 10px;
-        color: rgb(14, 106, 142);
-        font-weight: bold;
-        font-size: 16pt;
-    }
-    
-  
-    p.day-night-paragraph3 {
-      border-bottom: 2px dashed;
-      padding-bottom: 10px;
-        color: rgb(171, 19, 87);
-        font-weight: bold;
-        font-size: 16pt;
-    }
-}
-
-.theme-dark{
-    p.day-night-paragraph {
-        border-left: 5px dashed;
-       
-        padding-left:10px;
-        color: rgb(37, 176, 162);
-        font-weight: bold;
-        font-size: 17pt;
-    }
-
-    p.day-night-paragraph2 {
-      
-      border-bottom: 2px solid;
-      padding-bottom: 10px;
-      
-      color: rgba(254, 201, 39, 0.91);
-      font-weight: bold;
-      font-size: 16pt;
-    }
-
-    p.day-night-paragraph3 {
-      border-bottom: 2px dashed;
-      padding-bottom: 10px;
-      color: rgb(225, 51, 164);
-      font-weight: bold;
-    }
-
-    p.day-night-paragraph4 {
-      border-left: 2px dashed;
-      padding-left: 10px;
-      color: rgb(225, 51, 164);
-      font-weight: bold;
-    }
-}
-
-
+/*************** 自定义小标题 day-night-*：已写入 themes/Border/theme.css 末尾 USER PATCH（扁平选择器，避免嵌套不生效） ***************/
 
 /************* 自定义 H12345 标题效果 ************/
-
+/* 关闭标题左侧标记，改为整行下划线。 */
 
 .HyperMD-header .cm-header {
-    border-left: 5px solid;
-    padding-left:10px;
+    /* border-left: 5px solid; */
+    /* padding-left: 10px; */
+    border-left: none;
+    padding-left: 0;
+}
 
+/*************** Markdown 标题配色：与 themes/Obsidian Nord 一致（正文染色 + Border 左侧指示条） ***************/
+/* 色值取自 Nord :root，不依赖当前主题是否加载 Nord */
+:root {
+  --nord-heading-red: #a34b56;
+  --nord-heading-yellow: #c39b42;
+  --nord-heading-blue: #3d84c9;
+  --nord-heading-purple: #3659bf;
+  --nord-heading-frost0: #5f9f9e;
+  --nord-heading-frost2: #5f86ad;
+}
+
+body.theme-light,
+body.theme-dark {
+  --h1-color: var(--nord-heading-red);
+  --h2-color: var(--nord-heading-yellow);
+  --h3-color: var(--nord-heading-blue);
+  --h4-color: var(--nord-heading-purple);
+  --h5-color: var(--nord-heading-frost0);
+  --h6-color: var(--nord-heading-frost2);
+  --h1-accent-color: var(--nord-heading-red);
+  --h2-accent-color: var(--nord-heading-yellow);
+  --h3-accent-color: var(--nord-heading-blue);
+  --h4-accent-color: var(--nord-heading-purple);
+  --h5-accent-color: var(--nord-heading-frost0);
+  --h6-accent-color: var(--nord-heading-frost2);
+  --h1-size: 2.05em;
+  --h2-size: 1.72em;
+  --h3-size: 1.42em;
+  --h4-size: 1.18em;
+  --h5-size: 1.02em;
+  --h6-size: 0.92em;
+  --h1-weight: 400;
+  --h2-weight: 400;
+  --h3-weight: 400;
+  --h4-weight: 400;
+  --h5-weight: 400;
+  --h6-weight: 400;
+  --inline-title-weight: 400;
+  --heading-underline-width: 2px;
+  --heading-underline-gap: 0.2em;
+  --heading-underline-length: 100%;
+  --inline-title-size: var(--h1-size);
+  --inline-title-underline-length: var(--heading-underline-length);
+  /* Nord：属性里的 Inline title 用黄，与 h1 正文红区分 */
+  --inline-title-color: var(--nord-heading-yellow);
+}
+
+/*************** Border 亮色背景：略微压暗 ***************/
+body.theme-light {
+  --background-primary: hsl(var(--accent-h), 10%, 96%);
+  --background-primary-alt: hsl(var(--accent-h), 10%, 96.6%);
+  --background-secondary: hsl(var(--accent-h), 12%, 92.2%);
+  --background-secondary-alt: hsl(var(--accent-h), 12%, 94.3%);
+  --background-tertiary: hsl(var(--accent-h), 28%, 92.8%);
+  --background-underlying-light: var(--background-tertiary);
+  --background-underlying: var(--background-tertiary);
+  --workspace-background-translucent: rgba(240, 240, 242, 0.84);
+}
+
+/*************** Markdown 标题：统一长度下划线 + 更明显的字号阶梯 ***************/
+.markdown-source-view.mod-cm6 .HyperMD-header,
+.markdown-rendered > :is(h1, h2, h3, h4, h5, h6),
+.markdown-preview-sizer > div > :is(h1, h2, h3, h4, h5, h6),
+.inline-title:not(.mk-inline-title) {
+  padding-bottom: var(--heading-underline-gap) !important;
+  border-bottom: none !important;
+  background-repeat: no-repeat !important;
+  background-position: left bottom !important;
+}
+
+.markdown-source-view.mod-cm6 :is(.HyperMD-header-1, .HyperMD-header-2, .HyperMD-header-3, .HyperMD-header-4, .HyperMD-header-5, .HyperMD-header-6)::before,
+.markdown-rendered > :is(h1, h2, h3, h4, h5, h6)::before,
+.markdown-preview-sizer > div > :is(h1, h2, h3, h4, h5, h6)::before,
+.markdown-source-view.mod-cm6 :is(.HyperMD-header-1 > .cm-header-1, .HyperMD-header-2 > .cm-header-2, .HyperMD-header-3 > .cm-header-3, .HyperMD-header-4 > .cm-header-4, .HyperMD-header-5 > .cm-header-5, .HyperMD-header-6 > .cm-header-6)::after,
+.markdown-rendered > :is(h1, h2, h3, h4, h5, h6)::after,
+.markdown-preview-sizer > div > :is(h1, h2, h3, h4, h5, h6)::after {
+  content: none !important;
+  display: none !important;
+}
+
+.markdown-rendered > :is(h1, h2, h3, h4, h5, h6),
+.markdown-preview-sizer > div > :is(h1, h2, h3, h4, h5, h6) {
+  text-indent: 0 !important;
+}
+
+.markdown-preview-view .heading-collapse-indicator,
+.markdown-source-view.mod-cm6 .HyperMD-header .collapse-indicator.collapse-icon {
+  transform: translateX(0) !important;
+}
+
+.markdown-source-view.mod-cm6 .HyperMD-header-1,
+.markdown-rendered > h1,
+.markdown-preview-sizer > div > h1 {
+  background-image: linear-gradient(var(--h1-accent-color), var(--h1-accent-color)) !important;
+  background-size: var(--heading-underline-length) var(--heading-underline-width) !important;
+}
+
+.markdown-source-view.mod-cm6 .HyperMD-header-2,
+.markdown-rendered > h2,
+.markdown-preview-sizer > div > h2 {
+  background-image: linear-gradient(var(--h2-accent-color), var(--h2-accent-color)) !important;
+  background-size: var(--heading-underline-length) var(--heading-underline-width) !important;
+}
+
+.markdown-source-view.mod-cm6 .HyperMD-header-3,
+.markdown-rendered > h3,
+.markdown-preview-sizer > div > h3 {
+  background-image: linear-gradient(var(--h3-accent-color), var(--h3-accent-color)) !important;
+  background-size: var(--heading-underline-length) var(--heading-underline-width) !important;
+}
+
+.markdown-source-view.mod-cm6 .HyperMD-header-4,
+.markdown-rendered > h4,
+.markdown-preview-sizer > div > h4 {
+  background-image: linear-gradient(var(--h4-accent-color), var(--h4-accent-color)) !important;
+  background-size: var(--heading-underline-length) var(--heading-underline-width) !important;
+}
+
+.markdown-source-view.mod-cm6 .HyperMD-header-5,
+.markdown-rendered > h5,
+.markdown-preview-sizer > div > h5 {
+  background-image: linear-gradient(var(--h5-accent-color), var(--h5-accent-color)) !important;
+  background-size: var(--heading-underline-length) var(--heading-underline-width) !important;
+}
+
+.markdown-source-view.mod-cm6 .HyperMD-header-6,
+.markdown-rendered > h6,
+.markdown-preview-sizer > div > h6 {
+  background-image: linear-gradient(var(--h6-accent-color), var(--h6-accent-color)) !important;
+  background-size: var(--heading-underline-length) var(--heading-underline-width) !important;
+}
+
+.inline-title:not(.mk-inline-title) {
+  background-image: linear-gradient(var(--inline-title-color), var(--inline-title-color)) !important;
+  background-size: var(--inline-title-underline-length) var(--heading-underline-width) !important;
 }
 
 /************** 页面宽度设置 ***************/
 
 body{
   --file-line-width: 42rem;  /* default is 45rem */
+  --code-block-font-size: 13px;
+}
+
+/*************** 代码语义高亮：与 themes/GitHub Theme 中 --code-* 映射一致（覆盖 Border 默认配色） ***************/
+/* 具体色相仍来自当前主题（Border）的 --color-red / --color-cyan 等；若与官方 GitHub Theme 观感略有差异，可再在同一主题下微调强调色 */
+body.theme-light,
+body.theme-dark {
+  /* 行内 `code`：Border 默认 --inline-code-normal 为粉色，改为正文色 */
+  --inline-code-normal: var(--text-normal);
+  --code-normal: var(--text-muted);
+  --code-comment: var(--text-faint);
+  --code-function: var(--color-orange);
+  --code-important: var(--color-orange);
+  --code-keyword: var(--color-red);
+  --code-property: var(--color-blue);
+  --code-punctuation: var(--text-muted);
+  --code-string: var(--color-cyan);
+  --code-tag: var(--color-red);
+  --code-value: var(--color-purple);
+  /* GitHub Theme 未单独定义；Border 有此项，与 keyword 同属红色系 */
+  --code-operator: var(--color-red);
 }
 
 .cm-indent{
@@ -88,8 +181,20 @@ body{
 
 /*************** 行首缩进 ***************/
 
-.markdown-source-view.mod-cm6 div.cm-line:not(.HyperMD-header):not(.HyperMD-list-line):not(.cm-indent):not(.hr ) {
+/* 围栏代码行不参与段落首行缩进（含 ``` 起止行） */
+.markdown-source-view.mod-cm6 div.cm-line:not(.HyperMD-header):not(.HyperMD-list-line):not(.cm-indent):not(.hr ):not(.HyperMD-codeblock):not(.HyperMD-codeblock-begin):not(.HyperMD-codeblock-end) {
   text-indent: 1.9em;
+}
+
+.markdown-source-view.mod-cm6 div.cm-line:is(.HyperMD-codeblock, .HyperMD-codeblock-begin, .HyperMD-codeblock-end) {
+  text-indent: 0 !important;
+}
+
+/* 阅读/实时预览：pre 不受段落 text-indent 继承影响 */
+.markdown-reading-view pre,
+.markdown-preview-view pre,
+.markdown-rendered pre {
+  text-indent: 0 !important;
 }
 
 
@@ -111,6 +216,10 @@ body{
   text-indent: 2em;
 }
 
+/* 小标题 day-night-* 不参与首行缩进（样式在 Border theme.css 末尾；此处保证片段后加载覆盖 2em） */
+[data-type="markdown"] div[class="el-p"]:not(blockquote) > p[class*="day-night-paragraph"] {
+  text-indent: 0 !important;
+}
 
 [data-type="markdown"] div[class="el-p"]:not(blockquote) > p>br {
   content: ' ';
@@ -142,6 +251,22 @@ mjx-frac{
 
 .math:not(.math-block):not(mjx-frac){
   font-size:16pt;
+}
+
+/*************** 代码块字体大小设置 ***************/
+
+.markdown-rendered pre,
+.markdown-rendered pre code,
+.markdown-source-view.mod-cm6 .HyperMD-codeblock,
+.markdown-source-view.mod-cm6 .cm-line.HyperMD-codeblock {
+  font-size: var(--code-block-font-size);
+}
+
+/*************** Code Styler 插件：顶栏 / 语言标签与笔记主背景对齐（不改 fenced 代码块填充色） ***************/
+body.code-styler.theme-light,
+body.code-styler.theme-dark {
+  --code-styler-header-background-colour: var(--background-primary) !important;
+  --code-styler-header-language-tag-background-colour: var(--background-primary) !important;
 }
 
 /************ 图片居中 ********/
@@ -182,3 +307,19 @@ table{
   min-width: 100%;
 }
 
+/*************** day-night 小标题：去掉段落内「加粗」观感（p 已设 normal，但 ** ** 会变成 <strong> 仍用粗体） ***************/
+.markdown-rendered p[class*="day-night-paragraph"] strong,
+.markdown-rendered p[class*="day-night-paragraph"] b,
+.markdown-preview-view p[class*="day-night-paragraph"] strong,
+.markdown-preview-view p[class*="day-night-paragraph"] b,
+.markdown-reading-view p[class*="day-night-paragraph"] strong,
+.markdown-reading-view p[class*="day-night-paragraph"] b {
+  font-weight: normal !important;
+}
+
+/* 嵌套 span、链接等若被主题设为 semibold，一并压平 */
+.markdown-rendered p[class*="day-night-paragraph"] *,
+.markdown-preview-view p[class*="day-night-paragraph"] *,
+.markdown-reading-view p[class*="day-night-paragraph"] * {
+  font-weight: normal !important;
+}
